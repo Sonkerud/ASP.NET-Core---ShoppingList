@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdeToFood.Data;
-using RestaurantLibrary;
+using VarorLibrary;
 
 namespace ASP.NET_Restaurang.Api
 {

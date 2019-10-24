@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 using OdeToFood.Data;
-using RestaurantLibrary;
+using VarorLibrary;
 namespace ASP.NET_Restaurang.Pages.VarorModels
 {
     public class ListModel : PageModel

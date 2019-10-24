@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using OdeToFood.Data;
-using RestaurantLibrary;
+using VarorLibrary;
 
 namespace ASP.NET_Restaurang.Pages.VarorModels
 {

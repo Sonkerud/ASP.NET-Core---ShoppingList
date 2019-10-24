@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RestaurantLibrary\RestaurantLibrary.csproj" />
+    <ProjectReference Include="..\RestaurantLibrary\VarorLibrary.csproj" />
   </ItemGroup>
 
 </Project>

@@ -31,9 +31,10 @@ namespace ASP.NET_Restaurang
                 }
             );
             //Tells what database to use. If IRestaurantData is used - > uses SqlRestaurantData.
-            //services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddSingleton<IVarorData, InMemoryVarorData>();
             //services.AddScoped<IRestaurantData, SqlRestaurantData>();
-            services.AddScoped<IVarorData, SqlVarorData>();
+            //Tog bort nedan
+            //services.AddScoped<IVarorData, SqlVarorData>();
 
 
             services.AddRazorPages();

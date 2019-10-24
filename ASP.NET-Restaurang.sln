@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-Restaurang", "ASP.NET-Restaurang\ASP.NET-Restaurang.csproj", "{CBAF5DDF-9331-45DD-B552-93B869592B2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET-Restaurang", "ASP.NET-Restaurang\ASP.NET-Restaurang.csproj", "{CBAF5DDF-9331-45DD-B552-93B869592B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantLibrary", "RestaurantLibrary\RestaurantLibrary.csproj", "{C4D665AD-197E-4892-A545-A7A0B3E910F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarorLibrary", "RestaurantLibrary\VarorLibrary.csproj", "{C4D665AD-197E-4892-A545-A7A0B3E910F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Data", "OdeToFood.Data\OdeToFood.Data.csproj", "{4492F13E-7D2D-4248-BD99-91371AF96883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood.Data", "OdeToFood.Data\OdeToFood.Data.csproj", "{4492F13E-7D2D-4248-BD99-91371AF96883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingLibrary", "ShoppingLibrary\ShoppingLibrary.csproj", "{BF85A0D9-FD6F-458D-9576-CDD7DF2775A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{E6293A18-0696-430A-B06B-A77DD644D19C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{4492F13E-7D2D-4248-BD99-91371AF96883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4492F13E-7D2D-4248-BD99-91371AF96883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4492F13E-7D2D-4248-BD99-91371AF96883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF85A0D9-FD6F-458D-9576-CDD7DF2775A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF85A0D9-FD6F-458D-9576-CDD7DF2775A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF85A0D9-FD6F-458D-9576-CDD7DF2775A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF85A0D9-FD6F-458D-9576-CDD7DF2775A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6293A18-0696-430A-B06B-A77DD644D19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6293A18-0696-430A-B06B-A77DD644D19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6293A18-0696-430A-B06B-A77DD644D19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6293A18-0696-430A-B06B-A77DD644D19C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

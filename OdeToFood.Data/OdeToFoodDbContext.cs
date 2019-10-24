@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestaurantLibrary;
+using VarorLibrary;
 using System;
 using System.Collections.Generic;
 using System.Text;
