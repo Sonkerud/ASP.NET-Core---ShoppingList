@@ -1,0 +1,17 @@
+﻿@page "{varorId:int}"
+@model ASP.NET_Restaurang.Pages.VarorModels.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>@Model.VarorModel.Name</h1>
+
+<div>
+    Id: @Model.VarorModel.Id
+</div>
+
+<div>
+    Pris: @Model.VarorModel.Price
+</div>
+
+<a asp-page="./List" class="btn btn-info">Alla varor</a>

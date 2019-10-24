@@ -1,0 +1,16 @@
+{
+  "name": "asp.net-restaurang",
+  "version": "1.0.0",
+  "dependencies": {
+    "datatables.net": "^1.10.20",
+    "datatables.net-bs": "^1.10.20"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

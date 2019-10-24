@@ -1,0 +1,25 @@
+﻿@using RestaurantLibrary
+
+@model VarorModel
+
+    <div class="card">
+        <div class="card-header">
+            <h3>@Model.Name</h3>
+        </div>
+        <div class="card-body font-weight-bolder">
+            <span>Pris: @Model.Price kronor</span>
+
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-lg" asp-page="./Detail" asp-route-varorId="@Model.Id">
+                <i class="fas fa-search"></i>
+            </a>
+            <a class="btn btn-lg" asp-page="./Edit" asp-route-varorId="@Model.Id">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a class="btn btn-lg" asp-page="./Delete" asp-route-varorId="@Model.Id">
+                <i class="fas fa-">Delete</i>
+            </a>
+        </div>
+        </div>
+     <br />
