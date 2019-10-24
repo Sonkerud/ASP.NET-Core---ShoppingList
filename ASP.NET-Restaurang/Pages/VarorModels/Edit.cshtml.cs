@@ -15,7 +15,7 @@ namespace ASP.NET_Restaurang.Pages.VarorModels
 
         [BindProperty]
         public VarorModel VarorModel { get; set; }
-        public IEnumerable<VarorModel> Varor;
+        //public IEnumerable<VarorModel> Varor;
 
         public EditModel(IVarorData varorData)
         {
@@ -38,9 +38,11 @@ namespace ASP.NET_Restaurang.Pages.VarorModels
            return Page();
         }
 
+        //For InMemoryData
         public IActionResult OnPost()
         {
-            Varor = varorData.GetVaraByName();
+            var varor = InMemoryVarorData.varor;
+            
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -51,20 +53,46 @@ namespace ASP.NET_Restaurang.Pages.VarorModels
             }
             else
             {
-                //for (int i = 0; i < Varor.Max(x => x.Id) + 1; i++)
-                //{
-                //    if (VarorModel.Name == Varor.ElementAt(i).Name)
-                //    {
-                //        VarorModel.Id = Varor.ElementAt(i).Id;
-                //        varorData.Update(VarorModel);
-                //    }
-                //}
-                
-                varorData.Add(VarorModel);
+                var found = varor.Any(x => x.Name.ToLower() == VarorModel.Name.ToLower());
+
+                for (int i = 0; i < varor.Count; i++)
+                {
+                    if (varor[i].Name.ToLower() == VarorModel.Name.ToLower())
+                    {
+                        InMemoryVarorData.varor[i].Price = VarorModel.Price;
+                    }
+                }
+
+                //If if doesn't exist: Add new Vara.
+                if (!found)
+                {
+                    VarorModel.Name = VarorModel.Name.First().ToString().ToUpper() + VarorModel.Name.Substring(1).ToLower();
+                    varorData.Add(VarorModel);
+                }
+                //varorData.Add(VarorModel);
             }
             varorData.Commit();
             return RedirectToPage("./List");
-            
         }
+        ////For SQL
+        //public IActionResult OnPost()
+        //{
+        //    var varor = InMemoryVarorData.varor;
+
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return Page();
+        //    }
+        //    if (VarorModel.Id > 0)
+        //    {
+        //        varorData.Update(VarorModel);
+        //    }
+        //    else
+        //    {
+        //            varorData.Add(VarorModel);
+        //    }
+        //    varorData.Commit();
+        //    return RedirectToPage("./List");
+        //}
     }
 }

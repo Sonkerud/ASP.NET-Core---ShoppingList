@@ -6,15 +6,19 @@ namespace OdeToFood.Data
 {
     public class InMemoryVarorData : IVarorData
     {
-        readonly List<VarorModel> varor;
+        //readonly List<VarorModel> varor;
+
+        public static List<VarorModel> varor;
 
         public InMemoryVarorData()
         {
             varor = new List<VarorModel>()
             {
-                //new VarorModel { Id = 1, Name = "Banan", Price = 12},
-                //new VarorModel { Id = 2, Name = "Blåbär", Price = 22},
-                //new VarorModel { Id = 3, Name = "Apelsin", Price = 31.50}
+                new VarorModel { Id = 1, Name = "Banan", Price = 12},
+                new VarorModel { Id = 2, Name = "Blåbär", Price = 22},
+                new VarorModel { Id = 3, Name = "Apelsin", Price = 31.50},
+                new VarorModel { Id = 4, Name = "Peppar", Price = 3.50},
+                new VarorModel { Id = 5, Name = "Krusbär", Price = 30}
             };
         }
 
@@ -30,6 +34,7 @@ namespace OdeToFood.Data
             return newVara;
         }
 
+        //Riktiga update
         public VarorModel Update(VarorModel updatedVara)
         {
             var vara = varor.SingleOrDefault(r => r.Id == updatedVara.Id);

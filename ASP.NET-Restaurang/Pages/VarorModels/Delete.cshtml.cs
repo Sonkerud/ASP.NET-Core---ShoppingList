@@ -34,11 +34,11 @@ namespace ASP.NET_Restaurang.Pages.VarorModels
             var vara = varorData.Delete(varorId);
             varorData.Commit();
 
-            if (vara == null)
-            {
-                return RedirectToPage("./NotFound");
-            }
-            TempData["Message"] = $"{vara.Name} deleted";
+            //if (vara == null)
+            //{
+            //    return RedirectToPage("./NotFound");
+            //}
+            //TempData["Message"] = $"{vara.Name} deleted";
             return RedirectToPage("./List");
 
         }

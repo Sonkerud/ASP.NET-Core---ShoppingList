@@ -30,12 +30,12 @@ namespace ASP.NET_Restaurang
                 options.UseSqlServer(Configuration.GetConnectionString("VarorDb"));
                 }
             );
-            //Tells what database to use. If IRestaurantData is used - > uses SqlRestaurantData.
-            services.AddSingleton<IVarorData, InMemoryVarorData>();
-            //services.AddScoped<IRestaurantData, SqlRestaurantData>();
-            //Tog bort nedan
-            //services.AddScoped<IVarorData, SqlVarorData>();
 
+            //Aktivera för InMemoryData
+            services.AddSingleton<IVarorData, InMemoryVarorData>();
+           
+            //Aktivera för SQL
+            //services.AddScoped<IVarorData, SqlVarorData>();
 
             services.AddRazorPages();
         }
