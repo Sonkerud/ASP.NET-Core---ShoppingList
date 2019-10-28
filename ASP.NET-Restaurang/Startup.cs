@@ -32,10 +32,10 @@ namespace ASP.NET_Restaurang
             );
 
             //Aktivera för InMemoryData
-            services.AddSingleton<IVarorData, InMemoryVarorData>();
+            //services.AddSingleton<IVarorData, InMemoryVarorData>();
            
             //Aktivera för SQL
-            //services.AddScoped<IVarorData, SqlVarorData>();
+            services.AddScoped<IVarorData, SqlVarorData>();
 
             services.AddRazorPages();
         }
